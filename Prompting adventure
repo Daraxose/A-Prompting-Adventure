@@ -1,0 +1,193 @@
+let yourName = prompt("Hello! Welcome to The Prompting Adventure Game!  Input your name please: ");
+
+
+
+let choice = prompt("Are you ready to begin your journey " + yourName + "? yes or no?");
+
+switch (choice) {
+    
+    case "yes":
+     let dirOne = prompt("Good then lets begin.  You are in the forest and see two trails.  One to the left and one to the right.  Which one do you take? right or left");
+        
+        switch (dirOne) {
+         
+          case "right":
+          let chOne = prompt("You see a grizzly bear.  What do you do?  1. Punch the bear 2. kick the bear 3. Scream 4. Run back to fork in the road");
+          
+          switch (chOne) {
+              
+              case "1":
+              alert("The grizzly mauls you to death in return.  End of Journey.");
+              break;
+              
+              case "2":
+              alert("The grizzly mauls you to death in return.  End of Journey.");
+              break;
+              
+              case "3":
+                let chTwo = prompt("The grizzly stands up on its hind legs then tilts its head in confusion.  What will you do now?  1. Keep running 2. stop and hit the bear 3. stop and do nothing 4. start singing Bare Necessities");
+              
+                switch (chTwo) {
+                    
+                    case "1":
+                    let chEight = prompt("You eventually reach the fork and the bear stops chasing you out of boredom.  1. Go to the left trail?  2. go back on the right trail?");
+                    
+                        switch (chEight) {
+                            
+                            case "1":
+                            alert("You walk forward and see the way to your home.  You keep walking and make it to your house.  Congratulations you made it to the end.  End of Journey.");
+                            break;
+                            
+                            case "2":
+                            alert("You walk forward and see the way to your home.  You keep walking and make it to your house.  Congratulations you made it to the end.  End of Journey.");
+                            break;
+                            
+                        }
+                    
+                    break;
+                    
+                    case "2":
+                    alert("The grizzly mauls you to death in return.  End of Journey.");
+                    break;
+                    
+                    case "3":
+                    alert("The grizzly mauls you to death in return.  End of Journey.");
+                    break;
+                    
+                    case "4":
+                    let chThree = prompt("The bear once again stands up then starts dancing.  Eventually he gets tired and starts to crawl away.  1. Continue on path?  2. Go back to fork in the road?");
+                    
+                        switch (chThree) {
+                            
+                            case "1":
+                            alert("You eventually reach a house.  The house turns out to be your house.  Congratulations you have made it to the end.  End of Journey.");
+                            break;
+                            
+                            case "2":
+                            let chFour = prompt("You find the fork from where you came from and tread on the left path.  You see a clearing.  Do you press on?  yes or no");
+                            
+                                switch (chFour) {
+                                    
+                                    case "1":
+                                    alert("You walk forward and see the way to your home.  You keep walking and make it to your house.  Congratulations you made it to the end.  End of Journey.");
+                                    break;
+                                    
+                                    case "2":
+                                    let chFive = prompt("Nothing happens.  1. Press on?  2. Go back to fork?");
+                                        
+                                        switch (chFive) {
+                                            
+                                            case "1":
+                                            alert("You walk forward and see the way to your home.  You keep walking and make it to your house.  Congratulations you made it to the end.  End of Journey.");
+                                            break;
+                                            
+                                            case "2":
+                                            alert("You find the fork from where you came from and tread on the right path.  You walk forward and see the way to your home.  You keep walking and make it to your house.  Congratulations you made it to the end.  End of Journey.");
+                                            break;
+                                            
+                                            default:
+                                            alert("Invalid Input!!!");
+                                            break;
+                                            
+                                        }
+                                    
+                                    break;
+                                    
+                                    default:
+                                    alert("Invalid Input!!!");
+                                    break;
+                                    
+                                }
+                            break;
+                            
+                            default:
+                            alert("Invalid Input!!!");
+                            break;
+                            
+                        }
+                    break;
+                    
+                    default:
+                    alert("Invalid Input!!!");
+                    break;
+                    
+                }
+              
+              break;
+              
+              case "4":
+              let chNine = prompt("The grizzly, now having its instincts kick in, it starts chasing you.  Do you keep running?  Yes or no");
+              
+                switch (chNine) {
+                    
+                    case "yes":
+                    prompt("You eventually reach the fork and the bear stops chasing you out of boredom.  1. Go to the left trail?  2. go back on the right trail?");
+                    break;
+                    
+                    case "no":
+                    alert("The grizzly mauls you to death.  End of Journey.");
+                    break;
+                    
+                    default:
+                    alert("Invalid Input!!!");
+                    break;
+                    
+                }
+              
+              break;
+              
+              default:
+              alert("Invalid input!!!");
+              break;
+              
+          }
+          break;
+          
+         case "left":
+         let chSix = prompt("You see a clearing up a head.  Do you press on? yes or no");
+            
+            switch (chSix) {
+                
+                case "yes":
+                alert("You eventually reach a house.  The house turns out to be your house.  Congratulations you have made it to the end.  End of Journey.");
+                break;
+                
+                case "no":
+                let chSeven = prompt("Nothing happens.  1. Press on?  2. Go back to fork?");
+                
+                    switch (chSeven) {
+                        
+                      case "1":
+                      prompt("You walk forward and see the way to your home.  You keep walking and make it to your house.  Congratulations you made it to the end.  End of Journey.");
+                      break;
+                      
+                      case "2":
+                      prompt("You find the fork from where you came from and tread on the right path.  You walk forward and see the way to your home.  You keep walking and make it to your house.  Congratulations you made it to the end.  End of Journey.");
+                      break;
+                      
+                      default:
+                      alert("Invalid Input!!!");
+                      break;
+                        
+                    }
+                
+            } 
+            
+          break;
+          
+         default:
+          alert("Invalid Input!!!");
+          break;
+           
+        }
+     break;
+     
+    case "no":
+    alert("End of journey.");
+    break;
+    
+    default:
+    alert("Invalid input!!!");
+    break;
+    
+}
